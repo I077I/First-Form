@@ -1,0 +1,314 @@
+$mainText: #d789d7; //#2a3d66;
+$subText: #9d65c9; //#5d54a4;
+$mainColor: #2a3d66; //#d789d7;
+$subColor: #5d54a4; //#9d65c9;
+$background: #25213d; //#3c3664; //#423c6e;// #50488d;
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: $mainText;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+i {
+    font-size: 0.7rem;
+    vertical-align: middle;
+}
+
+.formSection {
+    margin: auto;
+    padding: 3%;
+    width: 25%;
+    background-color: $background;
+    box-shadow: inset 0px 0px 11px 11px $mainColor;
+}
+
+// Top
+
+form label {
+    color: $subText;
+}
+
+.top {
+    font-size: 1.5rem;
+}
+
+// Bottom
+
+.bottom input {
+    width: 100%;
+    height: 1.5rem;
+    border: solid 3px $subColor;
+    background-color: $mainColor;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    color: $mainText;
+    margin: 1% 0% 3% 0%;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.bottom input::placeholder {
+    color: $mainText;
+}
+
+.bottom input::placholder:hover {
+    color: $subText;
+}
+
+.bottom input:focus::placeholder {
+    color: $subText;
+}
+
+.bottom input:focus {
+    border: solid 3px $subColor;
+    outline: none;
+    // color: blue;
+    color: $subText;
+    box-shadow: 0px 0px 4px 1px $mainColor;
+}
+
+//Radiowheels
+
+.radiowheels {
+    // display: inline-flex;
+    width: 100%;
+    margin: 1% 0% 2%;
+}
+
+.radiowheels .radioBlock {
+    margin: auto;
+    padding: 1%;
+}
+
+.radiowheels input label {}
+
+//Checkboxes
+
+.bar .bottom .checkboxes input {
+    width: auto;
+    margin: 1% 0% 3% 0%;
+}
+
+.bar .bottom .checkboxes input[type=checkbox] {
+    margin: 3px 3px 0px 4px;
+}
+
+.bar .bottom .checkboxes label {
+    vertical-align: middle;
+}
+
+//Dropdown
+
+.bottom #dropdown {
+    width: 102%;
+    background-color: $mainColor;
+    border: solid 3px $subColor;
+    border-radius: 6px;
+    outline: none;
+    height: 1.9rem;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: $mainText;
+    margin: 3% 0%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.bottom #dropdown:hover {
+    color: $subText;
+    box-shadow: 0px 0px 4px 1px $mainColor;
+}
+
+// Text Area
+
+.bar #text-area {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: $mainColor;
+    border: solid 3px $subColor;
+    border-radius: 6px;
+    outline: none;
+    height: 5rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: $mainText;
+    margin: 3% 0%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.bar .bottom #text-area:hover {
+    color: $subText;
+    border: solid 3px $subColor;
+}
+
+.bar .bottom #text-area:focus {
+    color: $subText;
+    border: solid 3px $subColor;
+}
+
+.bottom input:hover {
+    color: $subText;
+}
+
+// Button
+
+form button {
+    width: 102%;
+    background-color: $mainColor;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    height: 1.5rem;
+    box-shadow: 0px 0px 6px 4px $mainText, inset 0px 0px 6px 1px $mainText;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: $mainText;
+    margin: 3% 0%;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+form button:hover {
+    color: $subText;
+    box-shadow: 0px 0px 6px 4px $subText, inset 0px 0px 6px 1px $subText;
+}
+
+@media only screen and (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .formSection {
+        margin: auto;
+        padding: 0%;
+        width: 100vw;
+        height: 100vh;
+        background-color: $background;
+        box-shadow: inset 0px 0px 0px 0px $mainColor;
+    }
+
+    #survey-form {
+        margin: auto;
+        padding: 0%;
+        width: 100vw;
+        height: 100vh;
+        background-color: $background;
+        box-shadow: inset 0px 0px 0px 0px $mainColor;
+    }
+
+    form button {
+        width: 91%;
+        margin: 0;
+    }
+
+    .bottom input {
+        width: 91%;
+    }
+
+    .bar #text-area {
+        width: 89%;
+        min-width: 89%;
+        max-width: 89%;
+    }
+
+    .bottom #dropdown {
+        width: 91%;
+        margin: 0;
+    }
+}
+
+//Bottom
+
+
+
+@media only screen and (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #formsection {
+        margin: auto;
+        padding: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: $background;
+        box-shadow: inset 0px 0px 4px 4px $mainColor;
+    }
+
+    .formSection {
+        padding: 3%;
+    }
+
+    .form {
+        padding: 3%;
+        margin: 2% 0%;
+    }
+
+    #survey-form {
+        width: 100%;
+    }
+
+    form button {
+        width: 100.40%;
+        margin: 0;
+    }
+
+    .bottom input {
+        width: 100%;
+        height: 1.5rem;
+        border: solid 3px $subColor;
+        background-color: $mainColor;
+        border-radius: 6px;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+        color: $mainText;
+        margin: 1% 0% 3% 0%;
+        font-size: 0.9rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .bar #text-area {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .bottom #dropdown {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .form {
+        margin: 2%;
+    }
+}
